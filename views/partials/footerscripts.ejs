@@ -7,5 +7,57 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
 <script src="vendors/fontawesome/all.min.js"></script>
 <script src="js/theme.js"></script>
+<script src="js/jquery.min.js"></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&amp;family=Montserrat:wght@200;300&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&amp;family=Montserrat:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<script type="text/javascript">
+  
+  var quizIndex = 0;
+  var examples = [
+    ["Irytujesz mnie", true],
+    ["Ty zawsze zapominasz wynieść śmieci", true],
+    ["Jesteś idiotą", true],
+    ["Później znajdę dla Ciebie czas", false],
+    ["Niech to szlag", true],
+    ["Patrz, jak ta dziewczyna wygląda!", true],
+    ["Chciałabym, abyś następnym razem się nie spóźnił/a", false],
+  ];
+
+  $(document).ready(function() {
+
+    console.log(examples);
+
+    $('#quiz').html(examples[quizIndex][0]);
+
+    $('.answer').click(function() {
+        var value = $(this).data('value');
+
+        if (value == examples[quizIndex][1]) {
+          $('#quiz').html('Dobrze!');
+          
+        } else {
+          $('#quiz').html('Niestety, Twoja odpowiedź była nbieprawidłowa');
+        }
+
+        $('#modal-footer-answer').hide();
+        $('#modal-footer-next').show();
+
+    });
+
+     $('.next').click(function() {
+        if (quizIndex >= examples.length-1) {
+          quizIndex = 0;
+        } else {
+          quizIndex++;
+        }
+
+        $('#quiz').html(examples[quizIndex][0]);
+
+        $('#modal-footer-next').hide();
+        $('#modal-footer-answer').show();
+    });
+  });
+
+</script>

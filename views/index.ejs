@@ -31,7 +31,7 @@
               <h6 class="fs-0 text-uppercase fw-bold text-600">Sprawdź czy wiesz</h6>
               <h1 class="fw-bold fs-4 fs-lg-6 fs-xxl-7 text-primary">Czy to już hejt?</h1>
               <p class="mb-5 fs-1 fw-medium">Akty cyberprzemocy mają najczęściej miejsce w mediach społecznościowych, w komunikatorach lub w grach online, czyli tam, gdzie spędzamy najwięcej czasu.</p>
-              <p class="mb-5 fs-1 fw-medium">Wypełnij test, sprawdź czy wiesz czy spotykasz się z hejtem lub formuujesz komunikaty przemocowe.</p><a class="btn hover-top btn-collab" href="#!"><i class="fas me-2"></i>Sprawdź swoją wiedzę</a>
+              <p class="mb-5 fs-1 fw-medium">Wypełnij test, sprawdź czy wiesz czy spotykasz się z hejtem lub formuujesz komunikaty przemocowe.</p><a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn hover-top btn-collab" href="#!"><i class="fas me-2"></i>Sprawdź swoją wiedzę</a>
             </div>
           </div>
         </div>
@@ -148,6 +148,12 @@
                   </div>
                 </div>
                 <div class="accordion-item border-top">
+                  <h2 class="accordion-header" id="heading2"><button class="accordion-button px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2"><span class="mb-0 fw-bold text-start fs-1 text-1000">Dlaczego zajmujemy siętym tematem?</span></button></h2>
+                  <div class="accordion-collapse collapse" id="collapse2" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                    <div class="accordion-body pt-0 px-2">Przemoc werbalna jest ważnym ogniwem....</div>
+                  </div>
+                </div>
+                <div class="accordion-item border-top">
                   <h2 class="accordion-header" id="heading2"><button class="accordion-button px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2"><span class="mb-0 fw-bold text-start fs-1 text-1000">Kto jest grupą docelową kampanii?</span></button></h2>
                   <div class="accordion-collapse collapse" id="collapse2" aria-labelledby="heading2" data-bs-parent="#accordionExample">
                     <div class="accordion-body pt-0 px-2">Rodzice dzieci w wieku przedszkolnym i wczesnoszkolnym. Pośrednio każda osoba, która doświadczyła cyberprzemocy.</div>
@@ -192,6 +198,8 @@
         </div><!-- end of .container-->
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
+
+      <%- include('partials/modal'); %>
 
       <%- include('partials/footer'); %>
 
