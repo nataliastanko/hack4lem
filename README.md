@@ -2,6 +2,24 @@
 
 hack4lem hackathon initiative https://hack4lem.com/
 
+### Zespół
+
+Nazwa zespołu: cybernantki
+Nazwa projektu: Czy to już hejt? Akcja edukacyjno-wspierająca
+
+"cybernantki i cybernerzy – panie robotki i panowie roboty odpowiedzialni za dobre wychowanie, ogładę i zdolności rachowania najmłodszych robotów oddanych pod ich opiekę"
+
+#### Członkinie zespołu:
+
+* Natalia Stanko
+* Karolina Janikowska
+
+
+## Run
+
+    npm install
+    npm run watch
+
 # License BSD-3-Clause
 
 Copyright (c) 2021 Natalia Stanko
