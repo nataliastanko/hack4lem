@@ -1,0 +1,26 @@
+{
+  "name": "hack4lem",
+  "version": "0.0.1",
+  "description": "campaign fighting hate speech, hack4lem initiative https://hack4lem.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "hack4lem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nataliastanko/hack4lem.git"
+  },
+  "keywords": [
+    "campaign",
+    "hack4lem"
+  ],
+  "author": "Natalia Stanko",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/nataliastanko/hack4lem/issues"
+  },
+  "homepage": "https://github.com/nataliastanko/hack4lem#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
