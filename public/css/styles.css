@@ -1,0 +1,10 @@
+@media (min-width: 992px) {
+  section {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.odd-background {
+  background:linear-gradient(180deg, #FFFEFC -54.51%, #FFF8F0 99.98%);
+}

@@ -11,10 +11,8 @@
     <!-- ===============================================-->
     <title>Czy to już hejt?</title>
 
-    <!-- ===============================================-->
-    <!--    Stylesheets-->
-    <!-- ===============================================-->
-    <link href="css/theme.min.css" rel="stylesheet" />
+    <%- include('partials/styles'); %>
+
   </head>
 
   <body>
@@ -22,18 +20,9 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"> <img class="me-3 d-inline-block" src="img/logo.jpg" alt="logo"/></a><button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto pt-2 pt-lg-0 font-base">
-              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-bold active" aria-current="page" href="#home">Dla rodziców</a></li>
-              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-bold" href="#service">Dla dzieci i młodzieży</a></li>
-              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-bold" href="#feature">Dla szkół</a></li>
-              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-bold" href="#testimonial">Współpraca</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      
+      <%- include('partials/nav'); %>
+
       <section id="home">
         <div class="container">
           <div class="row align-items-center g-2">
@@ -50,20 +39,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-6 bg-soft-warning">
-        <div class="container">
-          <div class="row">
-            <div class="col-auto col-lg-12 d-lg-flex justify-content-center align-items-center justify-content-lg-between"><img class="m-2" src="assets/img/gallery/netflix.png" height="28" alt="brands" /><img class="m-2" src="assets/img/gallery/facebook.png" height="30" alt="brands" /><img class="m-2" src="assets/img/gallery/freelancer.png" height="38" alt="brands" /><img class="m-2" src="assets/img/gallery/mailbluster.png" height="38" alt="brands" /><img class="m-2" src="assets/img/gallery/theme-wagon.png" height="38" alt="brands" /></div>
-          </div>
-        </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-6">
+      <section class="py-6 odd-background">
         <div class="container">
           <div class="row flex-center">
             <div class="col-md-6 col-lg-4 text-center mb-6 mb-md-0 order-0"><img class="shadow-lg" src="img/czytojuzhejt2.jpg" width="300" alt="Przerwij z nami spiralę hejtu" style="border-radius:3rem;" /></div>
@@ -94,12 +70,12 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-6" style="background:linear-gradient(180deg, #FFFEFC -54.51%, #FFF8F0 99.98%);">
+      <section id="parents" class="py-6">
         <div class="container">
           <div class="row flex-center">
             <div class="col-md-6 col-lg-4 text-center mb-6 mb-md-0 order-0 order-md-1"><img class="shadow-collab" src="img/doswiadczeniedlugofalowe.png" width="300" alt="..." style="border-radius:3rem;" /></div>
             <div class="col-md-6 text-center text-md-start mb-6 offset-lg-1">
-              <h6 class="fs-0 text-uppercase fw-bold text-primary">Grupa docelowa</h6>
+              <h6 class="fs-0 text-uppercase fw-bold text-primary">Dla rodziców</h6>
               <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Projekt kierowany jest głównie do rodziców dzieci w wieku przedszkolnym i wczesnoszkolnym, a pośrednio do osób dotkniętych cyberprzemocą.</h6>
               <p class="my-4 fs-1 pe-xl-8">"Badania pokazują, że w cyberprzemoc angażują się zwykle te same dzieci, które są też sprawcami tradycyjnej przemocy, a większość ofiar cyberbullyingu to także ofiary tradycyjnej agresji rówieśniczej." - Raport Cyberprzemoc, NASK akademia</p><a class="btn hover-top btn-collab" href="#" role="button">Learn more</a>
             </div>
@@ -111,7 +87,58 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="pb-md-10" id="faq">
+      <section id="teens" class="py-6 odd-background">
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-md-6 col-lg-4 text-center mb-6 mb-md-0 order-0 order-md-1"><img class="shadow-collab" src="img/doswiadczeniedlugofalowe.png" width="300" alt="..." style="border-radius:3rem;" /></div>
+            <div class="col-md-6 text-center text-md-start mb-6 offset-lg-1">
+              <h6 class="fs-0 text-uppercase fw-bold text-primary">Dla dzieci i młodzieży</h6>
+              <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Dowiedz się jak dbać o siebie i swoje zdrowie i samopoczucie</h6>
+              <p class="my-4 fs-1 pe-xl-8">Spotkała/eś się z cyberprzemocą w internecie?</p><a class="btn hover-top btn-collab" href="#" role="button">Dbaj o siebie</a>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="schools" class="py-6">
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-md-6 col-lg-4 text-center mb-6 mb-md-0 order-0 order-md-1"><img class="shadow-collab" src="img/doswiadczeniedlugofalowe.png" width="300" alt="..." style="border-radius:3rem;" /></div>
+            <div class="col-md-6 text-center text-md-start mb-6 offset-lg-1">
+              <h6 class="fs-0 text-uppercase fw-bold text-primary">Dla szkół i przedszkoli</h6>
+              <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Dołącz do naszego projektu</h6>
+              <p class="my-4 fs-1 pe-xl-8">Edukacja przedszkolna i wczesnoszkolna</p><a class="btn hover-top btn-collab" href="#" role="button">Pobierz materiały</a>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="cooperation" class="py-6 odd-background">
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-md-6 col-lg-4 text-center mb-6 mb-md-0 order-0 order-md-1"><img class="shadow-collab" src="img/doswiadczeniedlugofalowe.png" width="300" alt="..." style="border-radius:3rem;" /></div>
+            <div class="col-md-6 text-center text-md-start mb-6 offset-lg-1">
+              <h6 class="fs-0 text-uppercase fw-bold text-primary">Współraca</h6>
+              <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Wpieraj projekt</h6>
+              <p class="my-4 fs-1 pe-xl-8">Wydawnictwa, dzienniczki uczniów lektroniczne, influencerzy</p><a class="btn hover-top btn-collab" href="#" role="button">Dołącz do akcji</a>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="" id="faq">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6 text-center mb-3">
@@ -158,40 +185,15 @@
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
 
-      <section>
-        <div class="container">
-          <!-- <hr class="text-200" /> -->
-   
-          <div class="row justify-content-md-between justify-content-evenly py-3">
-            <div class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start">
-              <p class="fs-0 my-2 text-400">All rights Reserved <span class="fw-bold text-500">&copy; Zespół cybernantki, 2021</span></p>
-            </div>
-            <div class="col-12 col-sm-8 col-md-6">
-              <p class="text-center text-md-end text-400"> Made with&nbsp;<svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FD7D72" viewBox="0 0 16 16">
-                  <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
-                </svg>&nbsp;by&nbsp;<a class="fw-bold text-500" href="https://themewagon.com/" target="_blank">ThemeWagon and Natalia Stanko</a></p>
-            </div>
-          </div>
-        </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
-      <!-- ============================================-->
+      <%- include('partials/footer'); %>
 
-    </main><!-- ===============================================-->
+    </main>
+    <!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
 
-
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
-    <script src="vendors/@popperjs/popper.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="vendors/is/is.min.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
-    <script src="vendors/fontawesome/all.min.js"></script>
-    <script src="js/theme.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&amp;family=Montserrat:wght@200;300&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&amp;family=Montserrat:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+      <%- include('partials/footerscripts'); %>
+  
   </body>
 
 </html>

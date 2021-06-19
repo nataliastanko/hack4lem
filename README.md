@@ -11,6 +11,10 @@ hack4lem hackathon initiative https://hack4lem.com/
 * Natalia Stanko
 * Karolina Janikowska
 
+## Requirements
+
+* node v14.17.0
+
 ## Run
 
     npm install
