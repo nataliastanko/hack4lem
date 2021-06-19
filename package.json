@@ -2,7 +2,7 @@
   "name": "hack4lem",
   "version": "0.0.1",
   "description": "campaign fighting hate speech, hack4lem initiative https://hack4lem.com/",
-  "main": "index.js",
+  "main": "start.js",
   "scripts": {
     "test": "hack4lem",
     "watch": "nodemon ./start.js"
@@ -22,9 +22,16 @@
   },
   "homepage": "https://github.com/nataliastanko/hack4lem#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "bootstrap": "^5.0.1",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "css-loader": "^5.2.6",
+    "nodemon": "^2.0.7",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-config": "^7.5.0"
   }
 }

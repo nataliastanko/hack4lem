@@ -1,19 +1,15 @@
 # Campaign fighting hate speech
 
+Czy to już hejt?
+Akcja edukacyjno-wspierająca
 hack4lem hackathon initiative https://hack4lem.com/
 
-### Zespół
-
-Nazwa zespołu: cybernantki
-Nazwa projektu: Czy to już hejt? Akcja edukacyjno-wspierająca
-
-"cybernantki i cybernerzy – panie robotki i panowie roboty odpowiedzialni za dobre wychowanie, ogładę i zdolności rachowania najmłodszych robotów oddanych pod ich opiekę"
+### Zespół cybernantki
 
 #### Członkinie zespołu:
 
 * Natalia Stanko
 * Karolina Janikowska
-
 
 ## Run
 
