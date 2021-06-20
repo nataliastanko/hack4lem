@@ -23,37 +23,22 @@
       
       <%- include('partials/nav'); %>
 
-      <section id="home">
-        <div class="container">
-          <div class="row align-items-center g-2">
-            <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" alt="Czy to już hejt?" src="img/czytojuzhejt.jpg" /></div>
-            <div class="col-md-7 col-lg-6 py-6 text-md-start text-center">
-              <h6 class="fs-0 text-uppercase fw-bold text-600">Sprawdź czy wiesz</h6>
-              <h1 class="fw-bold fs-4 fs-lg-6 fs-xxl-7 text-primary">Czy to już hejt?</h1>
-              <p class="mb-5 fs-1 fw-medium">Akty cyberprzemocy mają najczęściej miejsce w mediach społecznościowych, w komunikatorach lub w grach online, czyli tam, gdzie spędzamy najwięcej czasu.</p>
-              <p class="mb-5 fs-1 fw-medium">Wypełnij test, sprawdź czy wiesz czy spotykasz się z hejtem lub formuujesz komunikaty przemocowe.</p><a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn hover-top btn-collab" href="#!"><i class="fas me-2"></i>Sprawdź swoją wiedzę</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-6 odd-background">
+      <section id="home" class="py-8 odd-background">
         <div class="container">
-          <div class="row flex-center">
+          <div class="row flex-start">
             <div class="col-md-6 col-lg-4 text-center mb-6 mb-md-0 order-0"><img class="shadow-lg" src="img/czytojuzhejt2.jpg" width="300" alt="Przerwij z nami spiralę hejtu" style="border-radius:3rem;" /></div>
             <div class="col-md-6 text-center text-md-start mb-6 offset-0">
-              <h6 class="fs-0 text-uppercase fw-bold text-primary">Jaki problem rozwiązujemy?</h6>
+              <!-- <h6 class="fs-0 text-uppercase fw-bold text-primary">Jaki problem rozwiązujemy?</h6> -->
               <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Przerwij z nami spiralę hejtu</h6>
-              <p class="my-4 fs-1 pe-xl-8">"Badania pokazują, że w cyberprzemoc angażują się zwykle te same dzieci, które są też sprawcami tradycyjnej przemocy, a większość ofiar cyberbullyingu to także ofiary tradycyjnej agresji rówieśniczej." - Raport Cyberprzemoc, <a href="https://akademia.nask.pl/badania-i-raporty.html"> NASK akademia</a></p>
-
-              <a class="btn hover-top btn-collab" href="https://www.niebieskalinia.pl/spaw/docs/Przemoc_werbalna_wobec_dzieci_FDN_SMGKRC_2012_0.pdf" role="button">Badanie o przemocy werbalnej wobec dzieci</a>
-
-              <a class="btn hover-top btn-collab" href="http://monitoring.cpk.org.pl/wp-content/uploads/2016/02/Przemoc-wobec-dzieci-niezbednik_nauczyciela.pdf" role="button">Badanie o przemocy ogólnej w rodzinie</a>
-
-              <a class="btn hover-top btn-collab" href="https://repozytorium.amu.edu.pl/bitstream/10593/14438/1/SE_37_2015_Szymczak.pdf" role="button">Hejting jako zagrożenie</a>
-              
+              <p class="my-4 fs-1 pe-xl-8">
+                Przemoc rodzi przemoc, hejt rodzi hejt.<br />
+                Naucz się znami rozpoznawać komunikaty zawierające język przemocy i <strong>zamień je na pozytywne!</strong></p>
+              <p class="my-4 fs-1 pe-xl-8">
+                Wypełnij test, sprawdź czy rozpoznajesz sytuacje kiedy spotykasz się z hejtem lub formuujesz komunikaty przemocowe.
+              </p>
+              <p class="mb-5 fs-1 fw-medium"></p><a data-bs-toggle="modal" data-bs-target="#quizModal" class="btn hover-top btn-collab" href="#!"><i class="fas me-2"></i>Sprawdź swoją wiedzę</a>
             </div>
           </div>
 
@@ -62,34 +47,37 @@
       <!-- ============================================-->
 
 
-
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section id="parents" class="py-6">
+      <section id="teens" class="py-6">
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-md-6 col-lg-4 text-center mb-6 mb-md-0 order-0 order-md-1"><img class="shadow-collab" src="img/doswiadczeniedlugofalowe.png" width="300" alt="..." style="border-radius:3rem;" /></div>
+            <div class="col-md-6 text-center text-md-start mb-6 offset-lg-1">
+              <h6 class="fs-0 text-uppercase fw-bold text-primary">Dla dzieci i młodzieży</h6>
+              <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Spotkałaś/eś się z cyberprzemocą w internecie?</h6>
+              <p class="my-4 fs-1 pe-xl-8">Przykłady cybeerprzemocy to wyzywanie, ośmieszanie, poniżanie, szantażowanie, rozpowszechnianie kompromitujących materiałów na Twój temat lub Twoich znajomych.</p>
+              <p class="my-4 fs-1 pe-xl-8">Jeśli jest Ci z tym trudno, uzyskaj pomoc. Podziel się problemem z rodzicami lub zadzwoń na bezpieczną infolinię pomocy.</p><a class="btn hover-top btn-collab" href="#" role="button">Telefony zaufania</a>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+  <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="parents" class="py-6 odd-background">
         <div class="container">
           <div class="row flex-center">
             <div class="col-md-6 col-lg-4 text-center mb-6 mb-md-0 order-0 order-md-1"><img class="shadow-collab" src="img/doswiadczeniedlugofalowe.png" width="300" alt="..." style="border-radius:3rem;" /></div>
             <div class="col-md-6 text-center text-md-start mb-6 offset-lg-1">
               <h6 class="fs-0 text-uppercase fw-bold text-primary">Dla rodziców</h6>
               <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Jak możesz pomóc swojemu dziecku?</h6>
-              <p class="my-4 fs-1 pe-xl-8">Projekt kierowany jest głównie do rodziców dzieci w wieku przedszkolnym i wczesnoszkolnym, a pośrednio do osób dotkniętych cyberprzemocą.</p><a class="btn hover-top btn-collab" href="#" role="button">Learn more</a>
-            </div>
-          </div>
-        </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section id="teens" class="py-6 odd-background">
-        <div class="container">
-          <div class="row flex-center">
-            <div class="col-md-6 col-lg-4 text-center mb-6 mb-md-0 order-0 order-md-1"><img class="shadow-collab" src="img/doswiadczeniedlugofalowe.png" width="300" alt="..." style="border-radius:3rem;" /></div>
-            <div class="col-md-6 text-center text-md-start mb-6 offset-lg-1">
-              <h6 class="fs-0 text-uppercase fw-bold text-primary">Dla dzieci i młodzieży</h6>
-              <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Spotkała/eś się z cyberprzemocą w internecie?</h6>
-              <p class="my-4 fs-1 pe-xl-8">Uzyskaj natychmiastową pomoc. Dowiedz się jak dbać o siebie, o swoje zdrowie i samopoczucie. Istnieją instytucje, do których możesz zadzwonić</p><a class="btn hover-top btn-collab" href="#" role="button">Telefony zaufania</a>
+              <p class="my-4 fs-1 pe-xl-8">Edukacja szkolna nie przygotowuje do funkcjonowania w świecie opartym na nowoczesnych technologiach. Akty cyberprzemocy mają najczęściej miejsce w mediach społecznościowych, w komunikatorach lub w grach online, czyli tam, gdzie dzieci i młodzież spędzają najwięcej czasu.</p>
+              <p class="my-4 fs-1 pe-xl-8"></p>
+              <p class="my-4 fs-1 pe-xl-8">
+              Poznaj zjawisko cyberprzemocy. Ucz swoje dziecko komunikatów bez przemocy.</p>
+              </p><a class="btn hover-top btn-collab" href="#" role="button">Porozumiene bez przemocy</a>
             </div>
           </div>
         </div><!-- end of .container-->
@@ -106,8 +94,9 @@
             <div class="col-md-6 text-center text-md-start mb-6 offset-lg-1">
               <h6 class="fs-0 text-uppercase fw-bold text-primary">Dla szkół i przedszkoli</h6>
               <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Dołącz do naszego projektu</h6>
-              <p class="my-4 fs-1 pe-xl-8">Pracujesz wprzedszkolu? Jesteś nauczycielką/emedukacji wczesnoszkolnej? Jesteś rodzicem zaangażowanym w prawidłowy rozwój swojego dziecka?</p>
-              <a class="btn hover-top btn-collab" href="#" role="button"><i class="fas fa-download me-2"></i>Pobierz materiały</a>
+              <p class="my-4 fs-1 pe-xl-8">Pracujesz w przedszkolu? Jesteś nauczycielką/elem edukacji wczesnoszkolnej? Jesteś rodzicem zaangażowanym w prawidłowy rozwój swojego dziecka?</p>
+              <p class="my-4 fs-1 pe-xl-8">Wprowadź program do swojej placówki.</p>
+              <a class="btn hover-top btn-collab" href="#" role="button">Skontaktuj się z namii</a>
             </div>
           </div>
         </div><!-- end of .container-->
@@ -124,7 +113,7 @@
             <div class="col-md-6 text-center text-md-start mb-6 offset-lg-1">
               <h6 class="fs-0 text-uppercase fw-bold text-primary">Współraca</h6>
               <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Wpieraj projekt</h6>
-              <p class="my-4 fs-1 pe-xl-8">Wydawnictwa, dzienniczki uczniów lektroniczne, influencerzy</p><a class="btn hover-top btn-collab" href="#" role="button">Dołącz do akcji</a>
+              <p class="my-4 fs-1 pe-xl-8">Poszukujemy influencerów i wydawnictw chętnych do współpracy.</p><a class="btn hover-top btn-collab" href="#" role="button">Dołącz do akcji</a>
             </div>
           </div>
         </div><!-- end of .container-->
@@ -138,61 +127,48 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6 text-center mb-3">
-              <h6 class="fw-bold fs-4 display-3 lh-sm mb-5">Frequently asked questions</h6>
+              <h6 class="fw-bold fs-4 display-3 lh-sm mb-5">Misja</h6>
             </div>
           </div>
           <div class="row flex-center">
             <div class="col-lg-9">
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item border-top">
-                  <h2 class="accordion-header" id="heading1"><button class="accordion-button px-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><span class="mb-0 fw-bold text-start fs-1 text-1000">Jaki problem rozwiązujemy?</span></button></h2>
+                  <h2 class="accordion-header" id="heading1"><button class="accordion-button px-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><span class="mb-0 fw-bold text-start fs-1 text-1000">Jaki problem rozwiązujemy i dlaczego?</span></button></h2>
                   <div class="accordion-collapse collapse show" id="collapse1" aria-labelledby="heading1" data-bs-parent="#accordionExample">
-                    <div class="accordion-body pt-0 px-2">Brak świadomości rodziców o skali problemu cyberprzemocy. Brak wiedzy o źródłach tej przemocy, jakimi są z pozoru neutralne sformuowania stosowane w komunikacji z dziećmi.</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-top">
-                  <h2 class="accordion-header" id="heading2"><button class="accordion-button px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2"><span class="mb-0 fw-bold text-start fs-1 text-1000">Dlaczego zajmujemy siętym tematem?</span></button></h2>
-                  <div class="accordion-collapse collapse" id="collapse2" aria-labelledby="heading2" data-bs-parent="#accordionExample">
-                    <div class="accordion-body pt-0 px-2">Przemoc werbalna jest ważnym ogniwem....</div>
+                    <div class="accordion-body pt-0 px-2">Rozwiązujemy problem braku świadomości o skali cyberprzemocy, która odbja się negatywnie na zdrowiu psychicznym. <br />
+                    Przemoc rodzi przemoc, hejt rodzi hejt. Przerywamy spiraclę nienawiści zwracając uwagę na komunikaty, które są nie w porządku i ucząc pozytywnego języka komunikacji - języka wyrażania uczuć i potrzeb.</div>
                   </div>
                 </div>
                 <div class="accordion-item border-top">
                   <h2 class="accordion-header" id="heading2"><button class="accordion-button px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2"><span class="mb-0 fw-bold text-start fs-1 text-1000">Kto jest grupą docelową kampanii?</span></button></h2>
                   <div class="accordion-collapse collapse" id="collapse2" aria-labelledby="heading2" data-bs-parent="#accordionExample">
-                    <div class="accordion-body pt-0 px-2">Rodzice dzieci w wieku przedszkolnym i wczesnoszkolnym. Pośrednio każda osoba, która doświadczyła cyberprzemocy.</div>
+                    <div class="accordion-body pt-0 px-2">Projekt skierowany jest do młodych ludzi i ich rodziców.</div>
                   </div>
                 </div>
                 <div class="accordion-item border-top">
                   <h2 class="accordion-header" id="heading3"><button class="accordion-button px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3"><span class="mb-0 fw-bold text-start fs-1 text-1000">Jak zmierzymy wpływy naszej akcji?</span></button></h2>
                   <div class="accordion-collapse collapse" id="collapse3" aria-labelledby="heading3" data-bs-parent="#accordionExample">
-                    <div class="accordion-body pt-0 px-2">Przeprowadzimy okresowe ankiety i zbierzemy feeback z placówek szkolnych. Zmierzymy, ile osób wykona nasz interraktywny test.</div>
+                    <div class="accordion-body pt-0 px-2">Przeprowadzimy okresowe ankiety i zbierzemy feeback z placówek z nami współpracujących. Sporządzimy raport rozgłosu w mediach społecznościowych.</div>
                   </div>
                 </div>
                 <div class="accordion-item border-top">
                   <h2 class="accordion-header" id="heading4"><button class="accordion-button px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4"><span class="mb-0 fw-bold text-start fs-1 text-1000">Potencjał rozwojowy</span></button></h2>
                   <div class="accordion-collapse collapse" id="collapse4" aria-labelledby="heading4" data-bs-parent="#accordionExample">
-                    <div class="accordion-body pt-0 px-2">Może stać się kampaniąo zasięgu ogólnokrajowym. Zaangażujemy w akcję placówki szkolne i wczesnoszkolne, urzędy miasta, influencerów.<br />
-                      Jako potencjalnych partnerów projektu widzimy Microsoft z uwagi na to, żejest głównym dostawcą produktów edukacyjnych do szkół dedykowanych do nauczania zdalnego.<br />
-                      Drugim partnerem mógłby być bank PKO BP, który mógłby się włączyć do kampanii rozwoju kapitału ludzkiego, gdzie największą inwestycją są przyszłe pokolenia.
+                    <div class="accordion-body pt-0 px-2">Projekt może stać się kampanią o zasięgu ogólnokrajowym. Zaangażujemy w akcję placówki szkolne i wczesnoszkolne, urzędy miasta, influencerów, elektronicze dzienniczki uczniów.<br />
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item border-top">
                   <h2 class="accordion-header" id="heading5"><button class="accordion-button px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5"><span class="mb-0 fw-bold text-start fs-1 text-1000">Innowacyjność projektu</span></button></h2>
                   <div class="accordion-collapse collapse" id="collapse5" aria-labelledby="heading5" data-bs-parent="#accordionExample">
-                    <div class="accordion-body pt-0 px-2">Pierwszy projekt skierowany do tej grupy docelowej (rodzice). Angażuje dzięki interaktywnemu narzędziu - prostym zadaniom do rozwiązania. Zwracamy uwagę na formułowane komunikaty w relacjach między rodzicem a dzieckiem, oraz w relacjach rówieśniczych - w ten sposób edukuje, zwiększa śweiadomość i przeciwdziała zjawisku cyberprzemocy.</div>
+                    <div class="accordion-body pt-0 px-2">Projekt angażuje użytkownika wchodzącego na stronę dzięki za pomocą interaktywnego narzędzia. Projekt zwraca uwagę na formułowane przez nas komunikaty w relacjach międzyludzkich - w ten sposób edukuje, zwiększa śweiadomość i przeciwdziała zjawisku cyberprzemocy.</div>
                   </div>
                 </div>
                 <div class="accordion-item border-top">
                   <h2 class="accordion-header" id="heading6"><button class="accordion-button px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6"><span class="mb-0 fw-bold text-start fs-1 text-1000">Uwzględnienie potrzeb różnorodnych użytkowników (accesibility i inclusion)</span></button></h2>
                   <div class="accordion-collapse collapse" id="collapse6" aria-labelledby="heading5" data-bs-parent="#accordionExample">
-                    <div class="accordion-body pt-0 px-2">Nasza aplikacja jest przyjazna mobilnym użytkownikom internetu. Czytniki ekranu radzą sobie z nią bardzo dobrze, a kolory są dobrze dobrane kontrastowo.</div>
-                  </div>
-                </div>
-                <div class="accordion-item border-top">
-                  <h2 class="accordion-header" id="heading7"><button class="accordion-button px-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7"><span class="mb-0 fw-bold text-start fs-1 text-1000">Kompletność i zgodność z założeniami rozwiązania</span></button></h2>
-                  <div class="accordion-collapse collapse" id="collapse7" aria-labelledby="heading5" data-bs-parent="#accordionExample">
-                    <div class="accordion-body pt-0 px-2">There are no additional fees for using our mobile SDKs or to accept payments using consumer wallets like Apple Pay or Google Pay.</div>
+                    <div class="accordion-body pt-0 px-2">Aplikacja jest przyjazna mobilnym użytkownikom internetu. Czytniki ekranu radzą sobie z nią bardzo dobrze, a kolory są dobrze dobrane kontrastowo.</div>
                   </div>
                 </div>
               </div>
